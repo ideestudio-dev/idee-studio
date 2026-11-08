@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://idee.studio/sitemap.xml
