@@ -1,24 +1,23 @@
-// Idée Studio : en-tête au défilement, apparitions, filtres de la boîte à idées.
+// Idée Studio : apparitions, aperçu flottant dans l'index, année.
 (() => {
-  const top = document.querySelector(".top");
-  const onScroll = () => top && top.classList.toggle("scrolled", window.scrollY > 8);
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  const els = document.querySelectorAll(".chap .txt, .chap .visu, .row, .contact > *");
+  els.forEach((el) => el.classList.add("rv"));
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((list) => list.forEach((en) => {
+      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+    }), { threshold: 0.15 });
+    els.forEach((el) => io.observe(el));
+  } else els.forEach((el) => el.classList.add("in"));
 
-  const io = "IntersectionObserver" in window
-    ? new IntersectionObserver((entries) => entries.forEach((en) => {
-        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
-      }), { threshold: 0.12 })
-    : null;
-  document.querySelectorAll(".reveal").forEach((el) => (io ? io.observe(el) : el.classList.add("in")));
-
-  const chips = document.querySelectorAll(".chip");
-  const cards = document.querySelectorAll(".card");
-  chips.forEach((chip) => chip.addEventListener("click", () => {
-    const f = chip.dataset.filtre;
-    chips.forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
-    cards.forEach((card) => card.classList.toggle("hide", f !== "all" && card.dataset.stade !== f));
-  }));
-
+  const peek = document.querySelector(".peek");
+  if (peek && matchMedia("(hover: hover) and (min-width: 901px)").matches) {
+    let x = 0, y = 0, raf = 0;
+    const move = () => { peek.style.left = x + 24 + "px"; peek.style.top = y + "px"; raf = 0; };
+    document.querySelectorAll(".row").forEach((row) => {
+      row.addEventListener("mouseenter", () => { peek.src = row.dataset.preview; peek.classList.add("on"); });
+      row.addEventListener("mouseleave", () => peek.classList.remove("on"));
+      row.addEventListener("mousemove", (ev) => { x = ev.clientX + 120; y = ev.clientY; if (!raf) raf = requestAnimationFrame(move); });
+    });
+  }
   document.querySelectorAll("[data-annee]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();
