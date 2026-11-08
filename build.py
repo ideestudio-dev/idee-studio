@@ -18,7 +18,7 @@ e = html.escape
 PROJETS = [
     dict(key="ronde", nom="Ronde Sécurité", stade="live", url="https://rondesecurite.ca",
          logo="ronde.svg", desktop="ronde-desktop.jpg", mobile="ronde-mobile.jpg",
-         bg="#edf2ff", fg="#0d1430", ac="#1b5bff", dark=False,
+         bg="#ffffff", fg="#0d1430", ac="#1b5bff", dark=False,
          fr=dict(domaine="Transport", titre="La ronde de sécurité SAAQ, sur téléphone.",
                  texte="Les chauffeurs de camions font leur ronde avant départ en deux minutes. Les gestionnaires reçoivent le rapport PDF conforme et une alerte au moindre défaut critique.",
                  faits=["Web · iPhone · Android", "Flottes de véhicules lourds", "Sur l'App Store"]),
@@ -36,7 +36,7 @@ PROJETS = [
                  faits=["154 published campaigns", "French-speaking Africa", "Web"])),
     dict(key="souper", nom="Souper Club", stade="live", url="https://souperclub.app",
          logo="souper.png", desktop="souper-desktop.jpg", mobile="souper-mobile.jpg",
-         bg="#f1ecf6", fg="#211d2c", ac="#7b5cc4", dark=False,
+         bg="#ffffff", fg="#211d2c", ac="#7b5cc4", dark=False,
          fr=dict(domaine="Social", titre="Sortez de votre tête-à-tête.",
                  texte="Deux couples, une bonne table, et la suite leur appartient. On choisit une table, on fait connaissance à son rythme, dans un lieu public.",
                  faits=["Canada · français et anglais", "Web en ligne", "Apps iPhone et Android en chantier"]),
@@ -45,7 +45,7 @@ PROJETS = [
                  faits=["Canada · French and English", "Live on the web", "iPhone and Android apps in progress"])),
     dict(key="bercail", nom="Bercail", stade="build", url="",
          logo="bercail.svg", desktop="", mobile="bercail-mobile.jpg",
-         bg="#e7ebe2", fg="#13201b", ac="#13201b", dark=False,
+         bg="#ffffff", fg="#13201b", ac="#13201b", dark=False,
          fr=dict(domaine="Famille", titre="La maison, en ordre.",
                  texte="Le budget, les repas, les tâches et l'agenda de la famille dans une seule app, avec une journée claire pour chacun, enfants compris.",
                  faits=["Budget · repas · tâches · agenda", "Connexion par clé d'accès", "Utilisée chaque jour à la maison"]),
@@ -72,7 +72,7 @@ PROJETS = [
                  faits=["AI image analysis", "Up to 5 screenshots", "Idea"])),
     dict(key="conseil", nom="gildasattachi.com", stade="live", url="https://gildasattachi.com",
          logo="", desktop="conseil-desktop.jpg", mobile="",
-         bg="#f4f3ef", fg="#121210", ac="#121210", dark=False,
+         bg="#ffffff", fg="#121210", ac="#121210", dark=False,
          fr=dict(domaine="Conseil", titre="La pratique conseil du fondateur.",
                  texte="Communication interne et 360, marque employeur et gestion du changement, pour des organisations du Québec.",
                  faits=["Communication · changement", "Québec", "Web"]),
@@ -208,7 +208,7 @@ def page(lg):
   <meta property="og:image" content="{SITE}/assets/og.jpg">
   <meta property="og:locale" content="{t["lang"].replace("-", "_")}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f6f5f1">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

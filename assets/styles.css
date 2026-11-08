@@ -1,9 +1,9 @@
 /* Idée Studio */
 :root {
-  --bg: #f6f5f1;
+  --bg: #ffffff;
   --ink: #0b0b0a;
   --mute: #8a8984;
-  --line: #e2e0da;
+  --line: #ebebeb;
   --gut: clamp(20px, 4vw, 56px);
   --sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
@@ -62,15 +62,13 @@ figure { margin: 0; }
 .c-name { font-weight: 600; font-size: clamp(26px, 3.6vw, 52px); letter-spacing: -.04em; line-height: 1; }
 .c-dom { color: #55544f; }
 .c-st { font: 500 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; }
-.st-live::before, .st-build::before, .st-idea::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 8px; vertical-align: 1px; }
-.st-live::before { background: #19a35b; }
-.st-build::before { background: #e3a008; }
-.st-idea::before { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; }
+.c-st { color: var(--mute); }
 .peek { position: fixed; top: 0; left: 0; width: 210px; border-radius: 22px; pointer-events: none; opacity: 0; transform: translate(-50%, -50%) scale(.85) rotate(-4deg); transition: opacity .25s, transform .25s; z-index: 30; box-shadow: 0 30px 60px -20px rgba(0,0,0,.4); }
 .peek.on { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(-4deg); }
 
 /* Chapitres */
-.chap { background: var(--bg); color: var(--fg); }
+.chap { background: var(--bg); color: var(--fg); border-top: 1px solid var(--line); }
+.chap.dark { border-top: 0; }
 .chap-in { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: center; padding: clamp(80px, 10vw, 150px) var(--gut); min-height: 92svh; }
 .chap .txt { max-width: 520px; }
 .meta { display: flex; gap: 18px; font: 500 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .07em; opacity: .65; margin-bottom: 40px; }
@@ -94,7 +92,7 @@ figure { margin: 0; }
 .visu { position: relative; }
 .browser { border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 40px 80px -40px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.07); }
 .dark .browser { box-shadow: 0 40px 80px -30px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.08); }
-.dots { display: block; height: 30px; background: #f1f0ec; position: relative; border-bottom: 1px solid rgba(0,0,0,.06); }
+.dots { display: block; height: 30px; background: #f5f5f5; position: relative; border-bottom: 1px solid rgba(0,0,0,.06); }
 .dots::before { content: ""; position: absolute; left: 14px; top: 11px; width: 8px; height: 8px; border-radius: 50%; background: #d9d7d0; box-shadow: 14px 0 #d9d7d0, 28px 0 #d9d7d0; }
 .duo { padding: 0 0 60px; }
 .duo .browser { width: 88%; }
