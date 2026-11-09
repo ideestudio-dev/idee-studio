@@ -15,10 +15,10 @@ e = html.escape
 
 # tile = fond de la vignette (couleur du produit) ; dark = vignette sombre ; large = pleine largeur
 PROJETS = [
-    dict(key="ronde", nom="Ronde Sécurité", url="https://rondesecurite.ca", annee="2026", large=True,
-         desktop="ronde-desktop.jpg", mobile="ronde-mobile.jpg", tile="#e9efff", dark=False,
-         fr=dict(type="Application web et mobile · SaaS", texte="La ronde de sécurité des véhicules lourds sur téléphone, avec rapports PDF conformes à la SAAQ et alertes en temps réel pour les gestionnaires de flotte.", etat=""),
-         en=dict(type="Web and mobile app · SaaS", texte="Heavy-vehicle pre-trip inspections on a phone, with SAAQ-compliant PDF reports and real-time alerts for fleet managers.", etat="")),
+    dict(key="florvil", nom="Habitations Florvil", url="https://www.habitationsflorvil.com", annee="2026", large=True,
+         desktop="florvil-desktop.jpg", mobile="florvil-mobile.jpg", tile="#e9e4dc", dark=False,
+         fr=dict(type="Client · Site web bilingue", texte="Le site d'un entrepreneur en construction et rénovation résidentielles du Grand Montréal : design, contenus, articles de blogue et référencement, en français et en anglais.", etat=""),
+         en=dict(type="Client · Bilingual website", texte="The website of a residential construction and renovation contractor in Greater Montréal: design, content, blog articles and search optimization, in French and English.", etat="")),
     dict(key="depot", nom="Le Dépôt", url="https://ledepot.co", annee="2026",
          desktop="depot-galerie.jpg", mobile="depot-mobile.jpg", tile="#0d0d0c", dark=True,
          fr=dict(type="Plateforme web", texte="Le workspace des professionnels de la communication en Afrique francophone : portfolio, planification, facturation et une bibliothèque de 154 campagnes.", etat=""),
@@ -27,6 +27,10 @@ PROJETS = [
          desktop="", mobile="souper-mobile.jpg", tile="#efe9f5", dark=False,
          fr=dict(type="Application mobile · Site web", texte="Une application qui réunit deux couples autour d'une table au restaurant, au Canada, en français et en anglais.", etat=""),
          en=dict(type="Mobile app · Website", texte="An app that brings two couples together around a restaurant table, across Canada, in French and English.", etat="")),
+    dict(key="ronde", nom="Ronde Sécurité", url="https://rondesecurite.ca", annee="2026", large=True,
+         desktop="ronde-desktop.jpg", mobile="ronde-mobile.jpg", tile="#e9efff", dark=False,
+         fr=dict(type="Application web et mobile · SaaS", texte="La ronde de sécurité des véhicules lourds sur téléphone, avec rapports PDF conformes à la SAAQ et alertes en temps réel pour les gestionnaires de flotte.", etat=""),
+         en=dict(type="Web and mobile app · SaaS", texte="Heavy-vehicle pre-trip inspections on a phone, with SAAQ-compliant PDF reports and real-time alerts for fleet managers.", etat="")),
     dict(key="bercail", nom="Bercail", url="", annee="2026",
          desktop="", mobile="bercail-mobile.jpg", tile="#e5e9df", dark=False,
          fr=dict(type="Application web", texte="L'application de la maison : budget, repas, tâches et agenda de la famille, réunis au même endroit.", etat="En développement"),
@@ -58,7 +62,7 @@ T = {
             ("Applications mobiles", "Applications iPhone et Android, de la maquette jusqu'à la publication sur l'App Store et Google Play.", ["iOS et Android", "Notifications", "Publication sur les stores"]),
             ("Identité et design", "Logos, interfaces et systèmes visuels cohérents, du premier croquis au produit fini.", ["Identité de marque", "Design d'interface", "Prototypes"]),
         ],
-        projets_k="Projets récents", projets_h="Des produits conçus, développés et lancés par le studio.",
+        projets_k="Projets récents", projets_h="Des sites et des applications conçus, développés et lancés par le studio.",
         visiter="Voir le site",
         methode_k="Méthode", methode_h="Une façon de travailler simple.",
         methode=[
@@ -90,7 +94,7 @@ T = {
             ("Mobile apps", "iPhone and Android apps, from mockups to publication on the App Store and Google Play.", ["iOS and Android", "Notifications", "Store publishing"]),
             ("Brand and design", "Logos, interfaces and consistent visual systems, from the first sketch to the finished product.", ["Brand identity", "Interface design", "Prototypes"]),
         ],
-        projets_k="Recent work", projets_h="Products designed, built and launched by the studio.",
+        projets_k="Recent work", projets_h="Websites and apps designed, built and launched by the studio.",
         visiter="Visit site",
         methode_k="Approach", methode_h="A simple way of working.",
         methode=[
