@@ -1,6 +1,7 @@
 /* Idée Studio */
 :root {
   --ink: #0a0a0a;
+  --accent: #ff4a1c;
   --text: #3d3d3a;
   --mute: #8b8b86;
   --line: #e8e8e5;
@@ -143,3 +144,12 @@ a.case-link:hover .comp { transform: scale(1.025); }
   *, *::before, *::after { transition: none !important; }
   .rv { opacity: 1; transform: none; }
 }
+
+/* Couleur de la marque, utilisée avec parcimonie */
+.brand .acc { color: var(--accent); }
+.hero .k { color: var(--accent); }
+.btn:not(.ghost) { background: var(--accent); }
+.btn:not(.ghost):hover { background: var(--ink); }
+.voir { border-bottom-color: var(--accent); }
+a.case-link:hover h3 { color: var(--accent); }
+.mail:hover { color: var(--accent); }

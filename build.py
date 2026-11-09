@@ -201,7 +201,7 @@ def page(lg):
 <body>
   <a class="skip" href="#contenu">{t["skip"]}</a>
   <header class="top">
-    <a class="brand" href="{t["path"]}">Idée Studio</a>
+    <a class="brand" href="{t["path"]}">Id<span class="acc">é</span>e Studio</a>
     <nav aria-label="Navigation">
       <a class="hide-sm" href="#services">{nav[0]}</a>
       <a class="hide-sm" href="#projets">{nav[1]}</a>
