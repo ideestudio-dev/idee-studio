@@ -9,7 +9,7 @@ import html, json
 
 ROOT = Path(__file__).parent
 SITE = "https://idee.studio"
-GA_ID = ""  # identifiant Google Analytics (G-XXXX) de la propriété idee.studio
+GA_ID = "G-SGMPTLN3CR"  # identifiant Google Analytics (G-XXXX) de la propriété idee.studio
 CONTACT = "contact@idee.studio"
 e = html.escape
 
@@ -77,6 +77,7 @@ T = {
         contact_h="Un projet en tête ?", contact_p="Décrivez-nous votre idée en quelques lignes. Nous vous répondons rapidement, avec des questions et une première estimation.",
         contact_btn="Écrire au studio",
         bas="Studio créatif au Québec",
+        vie_privee="Mesure d'audience avec Google Analytics, adresse IP anonymisée.",
     ),
     "en": dict(
         lang="en-CA", path="/en/", other="/", self_label="EN", other_label="FR",
@@ -109,6 +110,7 @@ T = {
         contact_h="Have a project in mind?", contact_p="Tell us about your idea in a few lines. We'll get back to you quickly, with questions and a first estimate.",
         contact_btn="Write to the studio",
         bas="Creative studio in Québec",
+        vie_privee="Audience measurement with Google Analytics, IP address anonymized.",
     ),
 }
 
@@ -258,6 +260,7 @@ def page(lg):
 
   <footer class="foot wrap">
     <span>© <span data-annee>2026</span> Idée Studio · {t["bas"]}</span>
+    <span class="vp">{t["vie_privee"]}</span>
     <a href="mailto:{CONTACT}">{CONTACT}</a>
   </footer>
   <script src="/assets/main.js" defer></script>
