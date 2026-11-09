@@ -39,10 +39,10 @@ PROJETS = [
          desktop="", mobile="comptoir-mobile.jpg", tile="#ebe5d9", dark=False,
          fr=dict(type="Application mobile · Point de vente", texte="La prise de commande et la caisse des bars et maquis, du service en salle jusqu'au paiement en espèces ou par Mobile Money.", etat="Démo en ligne"),
          en=dict(type="Mobile app · Point of sale", texte="Ordering and checkout for bars and maquis, from table service to payment in cash or Mobile Money.", etat="Live demo")),
-    dict(key="cinelens", nom="CinéLens", url="", annee="2026", large=True,
-         desktop="cinelens-desktop.jpg", mobile="cinelens-mobile.jpg", tile="#0b0906", dark=True,
-         fr=dict(type="Application web · Intelligence artificielle", texte="Retrouver un film à partir d'une simple capture d'écran : titre, réalisateur, casting et où le regarder.", etat="Prototype"),
-         en=dict(type="Web app · Artificial intelligence", texte="Identify a film from a single screenshot: title, director, cast and where to watch it.", etat="Prototype")),
+    dict(key="cinelens", nom="CinéLens", url="https://cinelens.idee.studio", annee="2026", large=True,
+         desktop="cinelens-desktop.jpg", mobile="cinelens-mobile.jpg", tile="#e9ecf1", dark=False,
+         fr=dict(type="Application web · Intelligence artificielle", texte="Retrouver un film à partir d'une simple capture d'écran : titre, réalisateur, casting et où le regarder.", etat="Démo en ligne"),
+         en=dict(type="Web app · Artificial intelligence", texte="Identify a film from a single screenshot: title, director, cast and where to watch it.", etat="Live demo")),
 ]
 
 T = {
