@@ -123,15 +123,19 @@ a.case-link:hover .comp { transform: scale(1.025); }
 }
 @media (max-width: 760px) {
   .hide-sm { display: none; }
-  .head { grid-template-columns: 1fr; gap: 14px; }
+  .hero { padding: 56px 0 64px; }
+  .head { grid-template-columns: 1fr; gap: 12px; }
   .svc-list { grid-template-columns: 1fr; }
-  .svc, .svc + .svc { padding: 24px 0; border-right: 0; border-top: 1px solid var(--line); }
-  .svc h3 { margin-top: 16px; }
-  .cases { grid-template-columns: 1fr; }
-  .case.wide .tile { aspect-ratio: 4 / 3; }
-  .duo .browser { width: 92%; top: 40%; }
-  .case .duo .phone.over, .case:not(.wide) .duo .phone.over { width: 34%; }
-  .single .phone { width: 38%; }
+  .svc, .svc + .svc { padding: 22px 0; border-right: 0; border-top: 1px solid var(--line); }
+  .svc h3 { margin: 10px 0 8px; font-size: 20px; }
+  .svc ul { display: none; }
+  .cases { grid-template-columns: 1fr; gap: 48px; }
+  .tile, .case.wide .tile { aspect-ratio: 1 / 1; padding: 22px; }
+  .duo .browser { width: 100%; top: 34%; }
+  .case .duo .phone.over, .case:not(.wide) .duo .phone.over { width: 34%; right: 0; bottom: 0; border-radius: 20px; padding: 4px; }
+  .duo .phone.over img { border-radius: 16px; }
+  .single .phone { width: 46%; border-radius: 24px; padding: 5px; }
+  .single .phone img { border-radius: 19px; }
   .steps, .studio-grid { grid-template-columns: 1fr; }
   .contact .mail { display: block; margin: 18px 0 0; width: max-content; }
 }
