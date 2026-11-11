@@ -43,6 +43,10 @@ PROJETS = [
          desktop="cinelens-desktop.jpg", mobile="cinelens-mobile.jpg", tile="#e9ecf1", dark=False,
          fr=dict(type="Application web · Intelligence artificielle", texte="Retrouver un film à partir d'une simple capture d'écran : titre, réalisateur, casting et où le regarder.", etat="Démo en ligne"),
          en=dict(type="Web app · Artificial intelligence", texte="Identify a film from a single screenshot: title, director, cast and where to watch it.", etat="Live demo")),
+    dict(key="elan", nom="Élan", url="https://elan.idee.studio", annee="2026", large=True,
+         desktop="elan-desktop.jpg", mobile="elan-mobile.jpg", tile="#f7f3ec", dark=False,
+         fr=dict(type="Application mobile · Sport et santé", texte="Le sport des parents qui n'ont pas le temps : chaque matin, une séance de 10 à 30 minutes ajustée à la nuit, à l'énergie et au temps disponible.", etat="Démo en ligne"),
+         en=dict(type="Mobile app · Fitness", texte="Fitness for parents with no time: every morning, a 10 to 30 minute workout adjusted to last night's sleep, energy and the time available.", etat="Live demo")),
 ]
 
 T = {
