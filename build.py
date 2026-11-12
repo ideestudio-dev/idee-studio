@@ -44,9 +44,13 @@ PROJETS = [
          fr=dict(type="Application web · Intelligence artificielle", texte="Retrouver un film à partir d'une simple capture d'écran : titre, réalisateur, casting et où le regarder.", etat="Démo en ligne"),
          en=dict(type="Web app · Artificial intelligence", texte="Identify a film from a single screenshot: title, director, cast and where to watch it.", etat="Live demo")),
     dict(key="elan", nom="Élan", url="https://elan.idee.studio", annee="2026", large=True,
-         desktop="elan-desktop.jpg", mobile="elan-mobile.jpg", tile="#f7f3ec", dark=False,
+         desktop="elan-desktop.jpg", mobile="elan-mobile.jpg", tile="#0c0e0d", dark=True,
          fr=dict(type="Application mobile · Sport et santé", texte="Le sport des parents qui n'ont pas le temps : chaque matin, une séance de 10 à 30 minutes ajustée à la nuit, à l'énergie et au temps disponible.", etat="Démo en ligne"),
          en=dict(type="Mobile app · Fitness", texte="Fitness for parents with no time: every morning, a 10 to 30 minute workout adjusted to last night's sleep, energy and the time available.", etat="Live demo")),
+    dict(key="jama", nom="Jama", url="https://jama.idee.studio", annee="2026", large=True,
+         desktop="jama-desktop.jpg", mobile="jama-mobile.jpg", tile="#eef3fa", dark=False,
+         fr=dict(type="Application web · Clubs de sport", texte="La gestion des petits clubs de quartier en Afrique : matchs, présences, score, cotisations Mobile Money et dépenses, avec le message prêt pour le groupe WhatsApp.", etat="Démo en ligne"),
+         en=dict(type="Web app · Sports clubs", texte="Management for small neighbourhood sports clubs in Africa: matches, attendance, scores, Mobile Money dues and expenses, with the message ready for the WhatsApp group.", etat="Live demo")),
 ]
 
 T = {
